@@ -1,0 +1,9 @@
+IBM Plex Sans Arabic
+Copyright 2017 IBM Corp. All rights reserved.
+
+Licensed under the SIL Open Font License, Version 1.1.
+https://scripts.sil.org/OFL
+
+These files were downloaded by scripts/fetch_fonts.py from the Google Fonts
+CDN and are vendored here so the CV renders identically offline. The OFL
+permits this redistribution. Re-run that script to refresh them.

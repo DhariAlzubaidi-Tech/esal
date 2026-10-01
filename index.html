@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>إيصال — فوترة إلكترونية جاهزة للموجة ٢٥</title>
+<meta name="description" content="إيصال: كاشير عربي متوافق مع المرحلة الثانية للفوترة الإلكترونية، يعمل على جهازك الحالي ويبلّغ الهيئة تلقائياً. وربط برامج الكاشير والمحاسبة القائمة بمنصة فاتورة. التركيب ٣٩٩ ريالاً.">
+<meta property="og:title" content="إيصال — فوترة إلكترونية جاهزة للموجة ٢٥">
+<meta property="og:description" content="منشأتك مطالبة بالربط مع منصة «فاتورة» قبل ١ فبراير ٢٠٢٧. نركّب ونربط وندرّب.">
+<meta property="og:image" content="img/og.png">
+<meta property="og:locale" content="ar_SA">
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="fonts.css">
+<style>
+  :root {
+    --bg: #f6f7f8; --panel: #fff; --ink: #16181d; --ink-2: #4a505c; --line: #dfe3e8;
+    --green: #1c6b58; --green-ink: #fff; --soft: #e3f1ec; --gold: #9a6200; --gold-soft: #fdf1dc;
+    --radius: 14px; --shadow: 0 1px 2px rgba(0,0,0,.05), 0 8px 24px rgba(0,0,0,.06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #111317; --panel: #1b1e23; --ink: #eceef2; --ink-2: #b7bcc6; --line: #2c3139;
+      --green: #3fae8e; --green-ink: #0b1411; --soft: #17302a; --gold: #e2a93b; --gold-soft: #33280f;
+      --shadow: 0 1px 2px rgba(0,0,0,.4);
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+         font-family: "IBM Plex Sans Arabic", Tahoma, sans-serif; line-height: 1.7; }
+  a { color: inherit; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+  header.top { position: sticky; top: 0; z-index: 10; background: color-mix(in srgb, var(--bg) 88%, transparent);
+               backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+  header.top .wrap { display: flex; align-items: center; gap: 18px; min-height: 60px; flex-wrap: wrap; }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 22px; text-decoration: none; }
+  .brand img { width: 30px; height: 30px; }
+  nav.links { display: flex; gap: 16px; flex-wrap: wrap; font-size: 15px; }
+  nav.links a { text-decoration: none; color: var(--ink-2); }
+  nav.links a:hover { color: var(--ink); }
+  .spacer { flex: 1; }
+  .btn { display: inline-flex; align-items: center; gap: 8px; border: 0; border-radius: 10px; cursor: pointer;
+         padding: 11px 18px; font: inherit; font-weight: 700; text-decoration: none; }
+  .btn-primary { background: var(--green); color: var(--green-ink); }
+  .btn-ghost { background: var(--panel); color: var(--ink); border: 1px solid var(--line); }
+  .btn[aria-disabled="true"] { opacity: .55; cursor: default; }
+  section { padding: 56px 0; }
+  .hero { padding: 64px 0 48px; }
+  .hero .deadline { display: inline-block; background: var(--gold-soft); color: var(--gold); border-radius: 999px;
+                    padding: 4px 14px; font-weight: 600; font-size: 14px; }
+  .hero h1 { font-size: clamp(30px, 5vw, 48px); line-height: 1.3; margin: 16px 0 12px; }
+  .hero h1 em { font-style: normal; color: var(--green); white-space: nowrap; }
+  .hero p.lead { font-size: 19px; color: var(--ink-2); max-width: 720px; margin: 0 0 24px; }
+  .cta { display: flex; gap: 12px; flex-wrap: wrap; }
+  .who { margin-top: 26px; font-size: 14.5px; color: var(--ink-2); max-width: 720px; }
+  h2 { font-size: clamp(24px, 3.4vw, 32px); margin: 0 0 8px; }
+  .sub { color: var(--ink-2); margin: 0 0 28px; max-width: 720px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 16px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px;
+          box-shadow: var(--shadow); }
+  .card h3 { margin: 0 0 6px; font-size: 18px; }
+  .card p { margin: 0; color: var(--ink-2); font-size: 15.5px; }
+  .card .n { width: 34px; height: 34px; border-radius: 50%; background: var(--soft); color: var(--green);
+             display: grid; place-items: center; font-weight: 700; margin-bottom: 12px; }
+  .alt { background: var(--panel); border-block: 1px solid var(--line); }
+  .proof { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 16px; }
+  .proof figure { margin: 0; background: var(--bg); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+  .proof img { display: block; width: 100%; height: 300px; object-fit: cover; object-position: top right; }
+  .proof figcaption { padding: 10px 14px; font-size: 14px; color: var(--ink-2); }
+  .note { font-size: 13.5px; color: var(--ink-2); margin-top: 14px; }
+  .prices { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 16px; }
+  .price { text-align: center; }
+  .price .v { font-size: 40px; font-weight: 700; color: var(--green); line-height: 1.2; }
+  .price .v small { font-size: 18px; }
+  .price.gold { background: var(--gold-soft); }
+  .price.gold .v { color: var(--gold); }
+  .covers { text-align: center; color: var(--ink-2); font-size: 15px; margin-top: 16px; }
+  pre { direction: ltr; text-align: left; background: #0f1215; color: #d8e1e8; border-radius: 12px; padding: 16px;
+        overflow-x: auto; font-size: 13.5px; line-height: 1.6; margin: 0; }
+  .dev { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 22px; align-items: start; }
+  .dev ul { margin: 0; padding-inline-start: 20px; color: var(--ink-2); }
+  .dev li { margin-bottom: 6px; }
+  .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 16px; counter-reset: s; }
+  .step { text-align: center; }
+  .step::before { counter-increment: s; content: counter(s, arabic-indic); display: inline-grid; place-items: center;
+                  width: 40px; height: 40px; border-radius: 50%; border: 2px solid var(--green); color: var(--green);
+                  font-weight: 700; margin-bottom: 8px; }
+  .step b { display: block; }
+  .step span { color: var(--ink-2); font-size: 15px; }
+  details { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; }
+  summary { cursor: pointer; font-weight: 700; }
+  details p { color: var(--ink-2); margin: 10px 0 0; }
+  .contact { text-align: center; }
+  .contact p { color: var(--ink-2); }
+  footer { border-top: 1px solid var(--line); padding: 26px 0 40px; font-size: 13.5px; color: var(--ink-2); }
+  .num { direction: ltr; unicode-bidi: isolate; }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#"><img src="img/logo.png" width="30" height="30" alt="">إيصال</a>
+    <nav class="links" aria-label="الأقسام">
+      <a href="#shops">للمحلات</a>
+      <a href="#price">الأسعار</a>
+      <a href="#developers">لأصحاب البرامج</a>
+      <a href="#faq">أسئلة</a>
+    </nav>
+    <span class="spacer"></span>
+    <a class="btn btn-primary wa" href="#contact">تواصل واتساب</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <span class="deadline" id="countdown">الموجة ٢٥ من المرحلة الثانية</span>
+      <h1>منشأتك مطالبة بالربط مع منصة «فاتورة» قبل <em>١ فبراير ٢٠٢٧</em></h1>
+      <p class="lead"><b>إيصال</b> يصدر فواتيرك ويبلّغ بها هيئة الزكاة والضريبة والجمارك تلقائياً — من جهازك الحالي وبطابعتك الحالية. نركّبه في محلك، نربطه بالهيئة، وندرّب موظفيك.</p>
+      <div class="cta">
+        <a class="btn btn-primary wa" href="#contact">احجز التركيب عبر واتساب</a>
+        <a class="btn btn-ghost" href="#price">الأسعار</a>
+      </div>
+      <p class="who">إذا تجاوزت إيرادات منشأتك الخاضعة للضريبة ١٨٧٬٥٠٠ ريال في أي سنة من ٢٠٢٢ إلى ٢٠٢٥ ولم تُربط بعد، فهي مشمولة بالموجة الخامسة والعشرين.</p>
+    </div>
+  </section>
+
+  <section class="alt" id="shops">
+    <div class="wrap">
+      <h2>للمحلات: كاشير متوافق، بلا أجهزة جديدة</h2>
+      <p class="sub">مقهى، حلاق، مغسلة، بقالة، ورشة — أي منشأة لا تملك نظاماً مرتبطاً بالهيئة.</p>
+      <div class="grid">
+        <div class="card"><div class="n">١</div><h3>العميل يدفع سعر القائمة بالضبط</h3><p>١٠ ريالات تبقى ١٠ ريالات شاملة الضريبة — لا هللة زائدة على الفاتورة، والهيئة تقبلها دون تحذيرات.</p></div>
+        <div class="card"><div class="n">٢</div><h3>يعمل حتى لو انقطع الإنترنت</h3><p>تستمر في البيع، ويرسل الفواتير للهيئة تلقائياً فور عودة الاتصال.</p></div>
+        <div class="card"><div class="n">٣</div><h3>على جهازك وطابعتك</h3><p>يعمل على جهازك الحالي بنظام ويندوز، ويطبع على طابعة الإيصالات أو طابعة A4.</p></div>
+        <div class="card"><div class="n">٤</div><h3>أرشيف الست سنوات داخل المملكة</h3><p>نسخة احتياطية يومية، وفحص سلامة الأرشيف، وتصدير للمحاسب بضغطة زر.</p></div>
+        <div class="card"><div class="n">٥</div><h3>استرداد جزئي صحيح</h3><p>أرجِع صنفاً أو مبلغاً، بإشعار دائن يُبلَّغ للهيئة — دون تعديل الفاتورة الأصلية.</p></div>
+        <div class="card"><div class="n">٦</div><h3>شخص تتواصل معه</h3><p>نركّب ونربط وندرّب في محلك، ونجدّد شهادة الربط قبل انتهائها — لا نموذج إلكتروني.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="proof">
+    <div class="wrap">
+      <h2>مجرَّب على منصة الهيئة، لا على الورق</h2>
+      <p class="sub">لقطات من إيصال وهو يعمل على بيئة المطورين لدى الهيئة: اجتياز النماذج الستة، وفواتير مُبلَّغة ومعتمدة.</p>
+      <div class="proof">
+        <figure><img src="img/2-onboarding-6-of-6-pass.webp" width="1200" height="553" alt="سجل الربط: النماذج الستة PASS"><figcaption>الربط مع الهيئة: النماذج الستة PASS دون تحذيرات</figcaption></figure>
+        <figure><img src="img/1-invoices-reported-cleared.webp" width="1200" height="806" alt="قائمة الفواتير وحالتها لدى الهيئة"><figcaption>كل فاتورة وحالتها: أُبلغت الهيئة / اعتمدتها الهيئة</figcaption></figure>
+        <figure><img src="img/3-receipt-with-qr.webp" width="560" height="599" alt="إيصال مبسط برمز QR"><figcaption>إيصال ٨٠ مم برمز QR — المبلغ ١٠٫٠٠ بالضبط</figcaption></figure>
+        <figure><img src="img/4-b2b-tax-invoice-cleared.webp" width="900" height="1270" alt="فاتورة ضريبية A4 معتمدة"><figcaption>فاتورة ضريبية للمنشآت، معتمدة قبل تسليمها</figcaption></figure>
+      </div>
+      <p class="note">اللقطات من البيئة التجريبية، لذلك تحمل ختم «نسخة تجريبية». الهيئة لا تعتمد برامج بعينها؛ تفحص كل فاتورة عند وصولها — وفواتير إيصال تجتاز هذا الفحص.</p>
+    </div>
+  </section>
+
+  <section class="alt" id="price">
+    <div class="wrap">
+      <h2>الأسعار</h2>
+      <p class="sub">واضحة، بلا رسوم على عدد الفواتير.</p>
+      <div class="prices">
+        <div class="card price"><div>التركيب والربط والتدريب</div><div class="v">٣٩٩ <small>ريالاً</small></div><div>مرة واحدة</div></div>
+        <div class="card price"><div>الاشتراك</div><div class="v">٥٩ <small>ريالاً</small></div><div>شهرياً</div></div>
+        <div class="card price gold"><div>أو الاشتراك السنوي</div><div class="v">٥٩٠ <small>ريالاً</small></div><div>شهران مجاناً</div></div>
+      </div>
+      <p class="covers">يشمل الاشتراك: الدعم، والتحديثات عند تغيّر اشتراطات الهيئة، وتجديد شهادة الربط قبل انتهائها، ومتابعة النسخ الاحتياطي.</p>
+    </div>
+  </section>
+
+  <section id="developers">
+    <div class="wrap dev">
+      <div>
+        <h2>عندك برنامج كاشير أو محاسبة؟</h2>
+        <p class="sub" style="margin-bottom:14px">اربطه بالمرحلة الثانية دون إعادة بنائه. برنامجك يرسل كل فاتورة لإيصال باستدعاء واحد على الجهاز نفسه، فيعود إليه الرد والـ QR.</p>
+        <ul>
+          <li>فاتورة مبسطة (إبلاغ) وضريبية (اعتماد)، وإشعارات دائنة ومدينة</li>
+          <li>بنود معفاة وصفرية برموز الإعفاء — مقبولة دون تحذيرات</li>
+          <li>برقم فاتورتك أنت، وإعادة الإرسال لا تنشئ فاتورة ثانية أبداً</li>
+          <li>يرفض الفاتورة إن اختلف إجماليها عمّا رآه عميلك ولو بهللة</li>
+          <li>أمثلة جاهزة: C# و PHP و Python و curl</li>
+        </ul>
+        <p style="margin-top:18px"><a class="btn btn-primary wa" href="#contact">اطلب الربط لبرنامجك</a></p>
+      </div>
+      <pre>POST http://127.0.0.1:8910/api/documents
+{
+  "number": "POS-1001",
+  "expected_total": "20.00",
+  "prices_include_vat": true,
+  "lines": [
+    {"name": "Coffee", "qty": 2, "price": "10.00"}
+  ]
+}
+
+→ { "status": "reported",
+    "number": "POS-1001",
+    "qr": "AR1NYXhpbXVt…" }</pre>
+    </div>
+  </section>
+
+  <section class="alt" id="how">
+    <div class="wrap">
+      <h2>كيف نبدأ؟</h2>
+      <p class="sub">من أول رسالة إلى أول فاتورة مُبلَّغة.</p>
+      <div class="steps">
+        <div class="step"><b>تواصل معنا</b><span>نتفق على موعد يناسبك.</span></div>
+        <div class="step"><b>نركّب ونجهّز</b><span>على جهازك، مع أصنافك وأسعارك.</span></div>
+        <div class="step"><b>تُصدر رمز التحقق</b><span>من بوابة «فاتورة» بنفسك، فنربط الجهاز بالهيئة.</span></div>
+        <div class="step"><b>تبيع</b><span>كل فاتورة تُبلَّغ للهيئة تلقائياً.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <h2>أسئلة</h2>
+      <details><summary>هل البرنامج معتمد من الهيئة؟</summary><p>الهيئة لا تعتمد برامج بعينها؛ تفحص كل فاتورة عند وصولها وترفض المخالفة. فواتير إيصال تجتاز هذا الفحص، وقد جرّبنا إرسال فواتير مُخرَّبة عمداً فرفضتها الهيئة بالرمز الصحيح — دليل أن القبول ليس صدفة.</p></details>
+      <details><summary>ماذا لو انقطع الإنترنت؟</summary><p>تستمر في إصدار الفواتير المبسطة، ويرسلها إيصال تلقائياً عند عودة الاتصال (المهلة النظامية ٢٤ ساعة).</p></details>
+      <details><summary>ماذا لو تعطّل الجهاز؟</summary><p>نسخة احتياطية يومية على ذاكرة خارجية؛ جهاز جديد يكمل منها بتسلسل الفواتير نفسه.</p></details>
+      <details><summary>هل تأخذون كلمة مرور بوابة «فاتورة»؟</summary><p>لا. أنت تدخل البوابة وتصدر رمز التحقق بنفسك، ونحن نكتبه في البرنامج فقط.</p></details>
+      <details><summary>كم الغرامة إن لم أربط؟</summary><p>تبدأ الهيئة عادة بإنذار، ثم غرامات تتصاعد عند التكرار. راجع جدول المخالفات الرسمي لدى الهيئة للأرقام الدقيقة.</p></details>
+      <details><summary>عندي برنامج كاشير الآن</summary><p>إن كان مرتبطاً بالمرحلة الثانية فأنت مغطّى. وإن لم يكن، فإما أن يربطه صاحب البرنامج (ونستطيع ربطه له)، أو تنتقل إلى إيصال.</p></details>
+    </div>
+  </section>
+
+  <section class="alt contact" id="contact">
+    <div class="wrap">
+      <h2>تواصل معنا</h2>
+      <p>اكتب لنا نوع نشاطك ومدينتك، ونرد عليك بموعد.</p>
+      <p><a class="btn btn-primary wa" id="wa-main" href="#contact">واتساب</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">إيصال برنامج مستقل، غير تابع لهيئة الزكاة والضريبة والجمارك. «فاتورة» اسم منصة الهيئة للفوترة الإلكترونية.</div>
+</footer>
+
+<script>
+  // The WhatsApp number is kept out of the page on purpose: stored reversed in
+  // pieces, and turned into a link only when someone taps the button. Bots
+  // that harvest phone numbers from page source find nothing to collect.
+  var WA_REVERSED = ["9495", "0601", "5669"];
+  var TEXT = "السلام عليكم، أرغب في الاستفسار عن إيصال للفوترة الإلكترونية.";
+
+  function whatsapp() {
+    return WA_REVERSED.join("").split("").reverse().join("");
+  }
+
+  document.querySelectorAll("a.wa").forEach(function (a) {
+    a.addEventListener("click", function (e) {
+      e.preventDefault();
+      window.open("https://wa.me/" + whatsapp() + "?text=" + encodeURIComponent(TEXT),
+                  "_blank", "noopener");
+    });
+  });
+
+  // Days left until the Wave 25 deadline, in Riyadh time.
+  var deadline = Date.UTC(2027, 1, 1) - 3 * 3600 * 1000;
+  var days = Math.ceil((deadline - Date.now()) / 86400000);
+  if (days > 0) {
+    var n = days.toLocaleString("ar-SA");
+    var r = days % 100;
+    var word = days === 1 ? "يوم واحد" : days === 2 ? "يومان"
+      : (r >= 3 && r <= 10) ? n + " أيام"
+      : (r <= 2) ? n + " يوم" : n + " يوماً";
+    document.getElementById("countdown").textContent =
+      "الموجة ٢٥ — بقي " + word + " على الموعد النظامي";
+  }
+</script>
+</body>
+</html>
